@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 30px;
+}
+
+main > h1{
+    text-align: center;
+    padding: 20px 0 50px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5em;
+}
+
+main > section#gl{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+    justify-items: center;
+}
+
+main > section section#capa{
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+}
+
+main > section section#capa h1{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 50px;
+    font-family: Kalam;
+    font-weight: normal;
+    position: relative;
+}
+
+section#capa h1::before{
+    content: '';
+    width: 230px;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+section#capa h1::after{
+    content: '';
+    width: 210px;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+main > section section#ante-capa{
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    position: relative;
+}
+
+section#ante-capa p{
+    padding: 10px 10px 0 10px;
+}
+
+section#ante-capa p.baixo{
+    position: absolute;
+    bottom: 0;
+    line-height: 1.5;
+}
+
+section#ante-capa p.b1{
+    position: absolute;
+    bottom: 30px;
+    line-height: 1.5;
+}
