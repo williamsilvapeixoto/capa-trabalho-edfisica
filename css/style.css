@@ -87,3 +87,40 @@ section#ante-capa p.b1{
     bottom: 30px;
     line-height: 1.5;
 }
+
+@media print{
+    main{
+        width: 100%;
+        height: 100%;
+    }
+
+    section#gl{
+        width: 100%;
+        height: 100%;
+    }
+
+    section#capa{
+        width: 100%;
+        height: 100%;
+    }
+
+    div.div-before{
+        width: 230px;
+        height: 2px;
+        background-color: blue;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    div.div-after{
+        width: 210px;
+        height: 2px;
+        background-color: yellow;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
